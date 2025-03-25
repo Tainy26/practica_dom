@@ -3,9 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Carlos Daniel Tapia">
+    <meta name="description" content="PcComponentes Web">
     <title>Pc Componentes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="./assets/faviconpccom.webp">
 </head>
-<body>
-    
+<body class="layout">
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#" class="logoPcComponentes">
+                    <img src="assets/logopccom.svg" alt="Pc Componentes">
+                </a>
+            </div>
+
+            <div class="categories">
+                <a href="#" class="menu">
+                    <img src="assets/burgermenu.svg" alt="Menú Desplegable">
+                    <p>Todas las categorías</p>
+                </a>
+            </div>
+
+            <div class="search-bar">
+                <select>
+                    <option value="all">Todo el catálogo</option>
+                    <option value="all">Reacondicionados</option>
+                </select>
+                <input type="text" placeholder="Buscar">
+                <button>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="user-account">
+                <a href="#" class="account">
+                    <img src="assets/user.svg" alt="Mi Cuenta">
+                    <p>Mi Cuenta</p>
+                </a>
+            </div>
+
+            <div class="my-cart">
+                <a href="#" class="shopcart">
+                    <img src="assets/buycart.svg" alt="Mi Cesta">
+                    <p>Mi Cesta</p>
+                </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="aside">
+            <div class="filter-bar">
+                <h3>Busqueda de filtros</h3>
+                <input type="text" placeholder="Buscar...">
+            </div>
+
+            <div class="filter-price">
+                <h3>Precio</h3>
+                <input type="range" min="500" max="5200" step="10" id="set-price-range">
+                <div class="price-inputs">
+                    <input type="number" placeholder="560€">
+                    <input type="number" placeholder="5200€">
+                </div>
+            </div>
+
+            <div class="filter-brand">
+                <h3>Marcas</h3>
+                <ul class="brand-list">
+                    <li><input type="checkbox" id="asus"><label for="asus">Asus (84)</label></li>
+                    <li><input type="checkbox" id="HP"><label for="HP">HP (105)</label></li>
+                    <li><input type="checkbox" id="Lenovo"><label for="Lenovo">Lenovo (54)</label></li>
+                    <li><input type="checkbox" id="MSI"><label for="MSI">MSI (137)</label></li>
+                    <li><input type="checkbox" id="Acer"><label for="Acer">Acer (40)</label></li>
+                    <button>Ver más</button>
+                </ul>
+            </div>
+
+            <div class="filter-ram-memory">
+                <h3>Memoria Ram</h3>
+                <ul class="ram-list">
+                    <li><input type="checkbox" id="16GB RAM"><label for="16GB RAM">16GB RAM (316)</label></li>
+                    <li><input type="checkbox" id="32GB RAM"><label for="32GB RAM">32GB RAM (231)</label></li>
+                    <li><input type="checkbox" id="8GB RAM"><label for="8GB RAM">8GB RAM (6)</label></li>
+                    <li><input type="checkbox" id="64GB RAM"><label for="64GB RAM">64GB RAM (3)</label></li>
+                    <li><input type="checkbox" id="24GB RAM"><label for="24GB RAM">24 GB RAM (8)</label></li>
+                    <button>Ver más</button>
+                </ul>
+            </div>
+
+
+            <div class="filter-type-laptop">
+                <h3>Tipo de Portátil</h3>
+                <ul class="laptop-type">
+                    <li><input type="checkbox" id="gaming"><label for="gaming">Gaming</label></li>
+                    <li><input type="checkbox" id="estudiar"><label for="estudiar">Para estudiar o trabajar</label></li>
+                    <li><input type="checkbox" id="ultrabook"><label for="ultrabook">Ultrabook</label></li>
+                    <li><input type="checkbox" id="2en1"><label for="2en1">2 en 1 Convertibles</label></li>
+                    <li><input type="checkbox" id="workstation"><label for="workstation">Workstation</label></li>
+                    <button>Ver más</button>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <main class="products">
+    </main>
 </body>
+<script type="module" src="./main.js"></script>
 </html>
